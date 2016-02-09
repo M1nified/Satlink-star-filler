@@ -50,4 +50,12 @@ var fillTheStars = function fillTheStars() {
   })
 
 }
-fillTheStars();
+// fillTheStars();
+
+chrome.runtime.sendMessage({type:'showPageAction'});//pokazywanie ikonki
+chrome.runtime.onMessage.addListener(function(message, sender) {
+  console.log(message)
+    if (message && message.type === 'fillTheStars') {
+        fillTheStars();
+    }
+});
