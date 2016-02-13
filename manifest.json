@@ -18,6 +18,11 @@
       "run_at": "document_end"
     }
   ],
+  "icons": {
+    "128": "img/icon128.png",
+    "16": "img/icon16.png",
+    "48": "img/icon48.png"
+  },
   "manifest_version": 2,
   "name": "Satlink star filler",
   "page_action": {
@@ -26,5 +31,5 @@
   "permissions": [
     "http://statlink.pl/*"
   ],
-  "version": "0.3"
+  "version": "0.4"
 }
